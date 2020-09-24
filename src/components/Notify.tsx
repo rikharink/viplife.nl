@@ -6,11 +6,12 @@ export interface NotifyProps {
 export const Notify: FC<NotifyProps> = ({ className }) => {
   return (
     <div className={className}>
-      <form name="drop-notify" method="POST" data-netlify="true">
+      <form name="drop-notify" method="POST">
         <div>
           <input name="email" className="outline-none border-b bg-transparent" type="text"></input>
           @topicus.nl
         </div>
+        <input type="hidden" name="drop-notify" value="contact" />
         <button className="rounded-sm border border-white text-white bg-transparent m-6 p-2" type="submit">notify me of next drop</button>
       </form>
     </div>
