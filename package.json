@@ -16,8 +16,13 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "concurrently \"npm:css-watch\" \"npm:react-watch\"",
+    "build": "yarn css-build && yarn react-build",
+    "dist": "cross-env NODE_ENV=production yarn build",
+    "css-watch": "postcss src/assets/tailwind.css -o src/assets/main.css -w",
+    "css-build": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "react-watch": "react-scripts start",
+    "react-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,5 +40,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.2",
+    "postcss": "^8.0.9",
+    "postcss-cli": "^8.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.8.10"
   }
 }
