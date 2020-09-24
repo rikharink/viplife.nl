@@ -17,6 +17,8 @@ export const Notify: FC<NotifyProps> = ({ className }) => {
             name="email"
             className="outline-none border-b bg-transparent"
             type="text"
+            minLength={1}
+            required
           ></input>
           @topicus.nl
         </div>
