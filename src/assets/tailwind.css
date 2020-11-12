@@ -8,15 +8,9 @@
 }
 
 @font-face {
-  font-family: "Killigrew";
-  font-style: normal;
+  font-family: "Canterbury-Regular";
+  src: url("./fonts/Canterbury.woff") format("woff"),
+    url("./fonts/Canterbury.woff2") format("woff2");
   font-weight: normal;
-  src: local("Killigrew"), url("./fonts/Killig.woff") format("woff");
-}
-
-@font-face {
-  font-family: "KilligrewStacatto";
   font-style: normal;
-  font-weight: normal;
-  src: local("KilligrewStacatto"), url("./fonts/Killigs.woff") format("woff");
 }

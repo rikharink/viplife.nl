@@ -3,10 +3,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [
-    './src/**/*.html',
-    './src/**/*.tsx',
-  ],
+  purge: ["./src/**/*.html", "./src/**/*.tsx"],
   target: "relaxed",
   prefix: "",
   important: false,
@@ -14,15 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "viplife-blue": "#60abec",
+        "viplife-blue": "#009be5",
       },
       fontFamily: {
-        thug: ["Killigrew", "serif"],
-        thugs: ["KilligrewStacatto", "serif"],
+        thug: ["Canterbury-Regular", "serif"],
       },
 
       backgroundImage: (theme) => ({
-        "viplife": "url('/img/viplife-background.png')"
+        viplife: "url('/img/viplife-background.png')",
       }),
     },
     screens: {

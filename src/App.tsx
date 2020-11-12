@@ -6,11 +6,14 @@ import { Notify } from "./components/Notify";
 function App() {
   return (
     <div className="App bg-center bg-cover bg-viplife flex flex-auto flex-col justify-center text-white">
-      <h1 className="font-thugs text-6xl">viplife</h1>
-      <h2 className="font-thug text-4xl">we didn't choose the viplife</h2>
-      <h2 className="font-thug text-4xl">the viplife chose us</h2>
+      <h1 className="font-thug text-6xl">Vip Life</h1>
+      <h2 className="font-thug text-4xl">we didn't choose the Vip Life</h2>
+      <h2 className="font-thug text-4xl">the Vip Life chose us</h2>
       <NextDrop className="text-2xl m-4" />
       <Notify className="text-xl m-6" />
+      <a className="text-l underline hover:text-black" href="https://viplife.rip">
+        pour one out for the team members that left
+      </a>
     </div>
   );
 }
