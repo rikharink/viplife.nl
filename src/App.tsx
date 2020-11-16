@@ -11,6 +11,9 @@ function App() {
       <h2 className="font-thug text-4xl">the Vip Life chose us</h2>
       <NextDrop className="text-2xl m-4" />
       <Notify className="text-xl m-6" />
+      <div className="m-8">
+        <a href="https://shop.spreadshirt.nl/vip-life/" className="text-2xl bg-viplife-blue text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-black rounded">shop</a>
+      </div>
       <a className="text-l underline hover:text-black" href="https://viplife.rip">
         pour one out for the team members that left
       </a>
