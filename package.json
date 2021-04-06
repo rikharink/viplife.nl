@@ -42,7 +42,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "6.0.0",
+    "concurrently": "6.0.1",
     "cross-env": "7.0.3",
     "postcss": "8.2.9",
     "postcss-cli": "8.3.1",
