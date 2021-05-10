@@ -44,7 +44,7 @@
   "devDependencies": {
     "concurrently": "6.1.0",
     "cross-env": "7.0.3",
-    "postcss": "8.2.14",
+    "postcss": "8.2.15",
     "postcss-cli": "8.3.1",
     "postcss-import": "14.0.2",
     "postcss-preset-env": "6.7.0",
